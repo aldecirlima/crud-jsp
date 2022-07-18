@@ -35,8 +35,9 @@ public class UsuarioDao {
 			while (rs.next()) {
 				Usuario usuario = new Usuario();
 				usuario.setId(rs.getInt("id"));
-				usuario.setNome(rs.getString("id"));
-				usuario.setPassword(rs.getString("password"));
+				usuario.setNome(rs.getString("nome"));
+				usuario.setEmail(rs.getString("email"));
+				usuario.setSobrenome(rs.getString("sobrenome"));;
 				usuario.setSexo(rs.getString("sexo"));
 				usuario.setPais(rs.getString("pais"));
 				list.add(usuario);
